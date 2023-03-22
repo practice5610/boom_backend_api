@@ -49,6 +49,7 @@ export class OrderController {
   async count(@param.where(Order) where?: Where<Order>): Promise<Response<Count>> {
     try {
       console.log('chck');
+      console.log('chck');
       console.log('workingwithid555');
       const data: Count | undefined = handleServiceResponseResult<Count>(
         await this.orderService.countOrders(where)
